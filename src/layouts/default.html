@@ -5,6 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{root}}css/app.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width">
@@ -19,17 +20,14 @@
             <center>
                 
                 <container>
-                    <row>
-                        <columns>
+                    <row class="collapse">
+                        <columns class="no-padding">
                             <spacer size="16"></spacer>
                             {{> header}} 
-<spacer size="16"></spacer>
  <!-- Pages you create in the src/pages/ folder are inserted here when the flattened emails are created.  -->
                             <row>
                             {{> body}} 
                             </row>
-
-                            {{> footer}}
                         </columns>
                     </row>
                 </container>
